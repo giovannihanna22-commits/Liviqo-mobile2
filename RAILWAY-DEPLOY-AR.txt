@@ -1,0 +1,20 @@
+LIVIQO Railway deployment package
+
+الرفع من الموبايل:
+1) فك ضغط هذا الملف على الموبايل.
+2) افتح GitHub repository LIVIQO-Mobile.
+3) Add file > Upload files.
+4) ارفع محتويات هذا المجلد (كل الملفات والمجلد static كما هو) إلى جذر المستودع، وليس ملف ZIP وحده.
+5) اضغط Commit changes.
+6) افتح Railway > New Project > Deploy from GitHub Repo.
+7) اختر LIVIQO-Mobile وانتظر البناء.
+8) أضف Volume إلى الخدمة واجعل Mount Path = /data.
+9) افتح Settings > Networking > Generate Domain.
+10) افتح الدومين الناتج من الهاتف.
+
+مهم جدًا:
+- هذه حزمة نشر اختبارية للـ Backend والواجهة، وليست إثباتًا أن استخراج Dubizzle يعمل على Railway.
+- المتصفح يعمل Headless على السيرفر. لا توجد نافذة Chromium مرئية للمستخدم.
+- تسجيل الدخول من زر Login معطّل في بيئة Railway، والتحقق البشري/CAPTCHA لا يمكن إكماله يدويًا في هذا البناء. إذا ظهر، ستحتاج الخدمة إلى تكامل remote browser مناسب قبل أن نعتبر البحث جاهزًا.
+- لا ترفع بيانات دخول أو Cookies أو ملفات Profile إلى GitHub.
+- لا تعتبر تصنيف OWNER إثبات ملكية؛ هو مؤشر آلي فقط، ويجب التحقق يدويًا من الإعلان.
